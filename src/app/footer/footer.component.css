@@ -1,0 +1,14 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 80px;
+  background-color: var(--primary);
+
+  margin-top: 32px;
+}
+
+footer > div > span {
+  color: #fff;
+}

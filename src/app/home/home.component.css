@@ -1,0 +1,205 @@
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+
+  margin-bottom: 8px;
+}
+
+.container-capa {
+  background-image: url("https://blog.conexos.com.br/wp-content/uploads/2018/10/Web-Development-1.jpg");
+  background-position: center;
+  background-size: cover;
+
+  width: 100%;
+  height: 50%;
+}
+
+.container-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 50%;
+
+  max-width: 1280px;
+}
+
+.info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: #fff;
+
+  width: 100%;
+  max-width: 1000px;
+
+  height: 500px;
+
+  border: 1px solid #ddd;
+  box-shadow: rgba(0, 0, 0, 0.2) 1px 3px 10px;
+}
+
+.info .info-profile {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.info .info-profile img,
+.info .info-profile > div {
+  padding: 32px;
+}
+
+.info .info-profile img {
+  width: 35%;
+  height: 100%;
+}
+
+.container-content button {
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 240px;
+  height: 60px;
+
+  border: 1px solid #ddd;
+
+  margin-bottom: 8px;
+
+  transition: all 0.4s;
+}
+
+.container-content button:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 4px;
+}
+
+.info-profile-pessoal {
+  height: auto;
+  width: 100%;
+
+  padding: 16px 8px 32px 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.info-profile-pessoal > p {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.info-profile-pessoal > span {
+  font-size: 14px;
+}
+
+.profile-info-data {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  /* max-width: 200px; */
+
+  margin: 32px 8px;
+}
+
+.title-info {
+  font-weight: 500;
+}
+
+.value-info {
+  color: var(--gray);
+}
+.profile-info-data > div {
+  display: grid;
+  grid-template-columns: 150px auto;
+
+  margin-bottom: 16px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 60px;
+  width: 100%;
+  background: var(--primary);
+}
+
+footer div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: auto !important;
+  text-align: center;
+}
+
+footer div a {
+  margin: 0 16px;
+}
+
+footer div a i {
+  font-size: 32px;
+  color: var(--secondary);
+  transition: all 0.3s;
+}
+
+footer div a i:hover {
+  color: var(--quarternary);
+}
+
+@media (max-width: 750px) {
+
+  .info {
+    box-shadow: none;
+    border:none;
+  }
+  
+  .info-profile {
+    flex-direction: column;
+    height: auto;
+    padding:32px;
+  }
+
+  .info .info-profile img {
+    width: 45%;
+    height: 70%;
+
+    max-width: 200px;
+    max-height: 350px;
+
+    align-self: center;
+  }
+
+  .info-profile-pessoal {
+    text-align: center;
+  }
+
+  .info .info-profile .profile-info-data {
+    height:auto;
+    width: 100%;
+    text-align: center;
+    margin: 8px 0px;
+  }
+
+  footer {
+    margin-top:48px;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .info .info-profile img {
+    width: 60%;
+    height: 70%;
+  }
+}

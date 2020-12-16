@@ -1,0 +1,117 @@
+.container {
+  margin: 18px 0px;
+  padding: 32px;
+}
+
+p {
+  text-align: justify;
+  font-size: 1.3rem;
+  margin-bottom: 18px;
+  font-weight: 400;
+}
+ul {
+  padding-left: 18px;
+  margin: 24px 0px 32px 0px;
+}
+
+ul li {
+  padding-left: 18px;
+  margin-bottom: 18px;
+
+  font-size: 18px;
+}
+
+.container-profissional-skills {
+  margin: 60px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-profissional-skills h1, .container-languages h1 {
+  font-weight: 500;
+  margin: 16px 0;
+}
+
+.grapichs {
+  margin: 18px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  border: 1px solid #ddd;
+  box-shadow: rgba(0, 0, 0, 0.2) 4px 8px 16px;
+}
+
+.grapichs .skill {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 8px;
+}
+
+.grapichs .skill .info-skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.info-skill label,
+.info-skill span {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+progress {
+  margin-top: 8px;
+  border-radius: 7px;
+  width: 100%;
+  height: 10px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+progress::-webkit-progress-bar {
+  background-color: var(--primary);
+  border-radius: 7px;
+}
+progress::-webkit-progress-value {
+  background-color: var(--third);
+  border-radius: 7px;
+}
+progress::-moz-progress-bar {
+  /* style rules */
+}
+
+.container-languages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.container-languages div {
+  margin-top:32px;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-languages .card {
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    
+    padding:16px;
+
+    align-items: center;
+}
+
+.container-languages .card span:first-child {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}

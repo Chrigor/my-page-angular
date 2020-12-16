@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+*,
+html {
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+
+:root {
+  --primary:#3890d8;
+  --secondary:#1f4287;
+  --third:#21e6c1;
+  --quarternary:#071e3d;
+
+  --gray: #aaa;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+}
